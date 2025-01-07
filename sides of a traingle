@@ -1,0 +1,23 @@
+//Take three numbers as an input and tell whether they are a traingle or not
+
+import java.util.Scanner;
+
+public class sidesofatriangle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int a = sc.nextInt();
+
+        System.out.println("enter second number");
+        int b = sc.nextInt();
+
+        System.out.println("enter third number");
+        int c = sc.nextInt();
+
+        if(a+b>c && b+c>a && a+c>b){
+            System.out.println("Sides of a traingle");
+        }else{
+            System.out.println("not a traingle");
+        }
+    }
+}
