@@ -1,0 +1,24 @@
+//Given a point(x,y) write a program to find out if it lies on x-axis or y-axis or at the origin.
+import java.util.*;
+public class lieswhere {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the x- axis");
+        int x= sc.nextInt();
+        System.out.println("enter the y- axis");
+        int y= sc.nextInt();
+
+
+        if(x==0 && y==0){
+            System.out.println("The point is on origin");
+
+        }else if(x==0){
+            System.out.println("lies on y-axis");
+        }else if(y==0){
+            System.out.println("lies on x-axis");
+        }else{
+            System.out.println("does not lie");
+        }
+
+    }
+}
