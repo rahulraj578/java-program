@@ -1,0 +1,27 @@
+// print the multiples of n
+package Loops;
+import java.util.Scanner;
+public class multiplesofn {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number to print it's multiples: ");
+
+        int n = sc.nextInt();
+
+        System.out.print("Enter how many multiples to print: ");
+
+        int c1 = sc.nextInt();
+
+        for (int i = n; i <= n*c1; i+=n) {
+
+            System.out.println(i);
+
+        }
+
+        sc.close(); // Close the scanner to avoid resource leak
+
+    }
+    
+}
