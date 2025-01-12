@@ -9,11 +9,21 @@ public class highestFactor {
         System.out.println("enter the number: ");
         int n = sc.nextInt();
 
-        for (int i = 1; i <= n; i++) {
+//        for (int i = 1; i <= n; i++) {
+//            if (n % i == 0) {
+//                System.out.println(i);
+//            }
+//
+//        }
+-----------------------------------------------------------------------Another Approach---------------------------------------------------------------------------
+//to print the highest common factor of a number
+        int hf=1;
+        for (int i = n-1; i >= 1; i--) {
             if (n % i == 0) {
-                System.out.println(i);
+                hf = i;
+                break;
             }
-
         }
+        System.out.println(hf);
     }
 }
