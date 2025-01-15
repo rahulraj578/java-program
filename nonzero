@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class productofNonZero {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int mul = 1;
+        while (n != 0) {
+            int lastdigit = n % 10;
+            if(lastdigit == 0) {
+                n/=10;
+                continue;
+            }
+            mul*= lastdigit;
+            n/=10;
+
+        }
+        System.out.println(mul);
+    }
+
+}
