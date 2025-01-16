@@ -1,0 +1,24 @@
+
+// print the sum and the reverse of a number
+
+import java.util.Scanner;
+
+public class numberSumAndReverse {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int n2 = n;
+        int rev = 0;
+        while (n != 0) {
+            int lastdigit = n % 10;
+            rev *= 10;
+            rev += lastdigit;
+            n /= 10;
+
+        }
+        System.out.println(rev);
+        System.out.println(rev + n2);
+    }
+}
+
