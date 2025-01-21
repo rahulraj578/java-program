@@ -1,0 +1,19 @@
+import java.util.*;
+public class StarCross {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
+        for (int i = 0; i < 2 * n - 1; i++) {
+
+            // Loop through each column in the row
+            for (int j = 0; j < 2 * n - 1; j++) {
+
+                // Print a star at the diagonal position
+                if (j == i || j == 2 * n - 2 - i)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
