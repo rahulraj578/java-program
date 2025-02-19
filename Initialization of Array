@@ -1,0 +1,33 @@
+package Arrays;
+import java.util.Scanner;
+public class initialisationOfArrays {
+    public static void main(String[] args) {
+
+
+        //int arr[] = {23, 54, 62, 72, 90};
+        //System.out.println(arr[2]);
+
+        // changing the index value of an array
+        //arr[2]= 32;
+        //System.out.println(arr[2]);
+
+        //printing all the elements using for loops
+//        for(int i=0; i<=arr.length-1; i++){
+//            System.out.println(arr[i]);
+//        }
+
+        //taking input from the user
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the size of array");
+        int n= sc.nextInt();
+        int[] arr= new int[n];
+        //input
+        for(int i=0; i<n; i++){
+            arr[i]= sc.nextInt();
+        }
+        //output
+        for(int i=0; i<n; i++){
+            System.out.println(arr[i]);
+        }
+    }
+}
