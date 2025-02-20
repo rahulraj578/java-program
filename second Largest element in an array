@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+
+public class secondLargest {
+    public static void main(String[] args) {
+//        int[] arr= {5,-3,8,-4,45,90,54, 99};
+//        int max= arr[0];
+
+        //tasking input from the user
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Array size");
+        int n = sc.nextInt();
+
+        // Taking input from the user to fill the array
+        int[] arr = new int[n];
+
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt(); // Storing user input in the array
+        }
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > max) max = arr[i]; // Updating max if a larger element is found
+        }
+        // Printing the maximum value found in the array
+        System.out.println(max);
+
+        
+        // for finding second largest element
+
+    int smax= Integer.MIN_VALUE;
+
+        for(int i=0; i<n; i++){
+        if(arr[i]>smax && arr[i] !=max) smax= arr[i]; 
+    }
+    
+        System.out.println("The second largest value is " +smax);
+}
+}
+
