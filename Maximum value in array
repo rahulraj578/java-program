@@ -1,0 +1,24 @@
+
+import java.util.*;
+public class maximumValue {
+    public static void main(String[] args){
+//        int[] arr= {5,-3,8,-4,45,90,54, 99};
+//        int max= arr[0];
+
+        //tasking input from the user
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter Array size");
+        int n= sc.nextInt();
+        int[] arr= new int[n];
+
+        int max= arr[0];
+        for(int i=0; i<n; i++){
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0; i<n; i++){
+            if(arr[i]>max) max= arr[i];
+        }
+        System.out.println(max);
+    }
+}
